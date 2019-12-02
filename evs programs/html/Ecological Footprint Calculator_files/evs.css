@@ -1,0 +1,414 @@
+.hoverable {}
+.hoverable :hover{background-color:#b0f2b0}
+body{
+	background-color: #ccf5cc;
+	background-image: url(logobg2.png);
+	background-repeat:space 100px;
+}
+.line-2 {
+	
+}
+#calcButton{
+	background-color:#00b200;
+}
+#showCalc{
+	background-color:#00b200;
+}
+#aboutButton{
+	background-color:#22b222;
+	z-index: 3;
+}
+div.diet{
+	font-family:"Roboto Condensed";
+}
+div.travel{
+	font-family:"Roboto Condensed";
+}
+div.waste{
+	font-family:"Roboto Condensed";
+}
+div.utilities{
+	font-family:"Roboto Condensed";
+}
+div.home{
+	font-family:"Roboto Condensed";
+}
+#wrapper {
+	background-color:#007700;
+	color: #ffffff;
+	z-index:1;	
+}
+#home {
+	
+}
+#utilities{
+	
+}
+#travel{
+	
+}
+#consumption{
+	
+}	
+#waste{
+	
+}
+div#ecological_footprint {
+	
+}
+div#about {
+
+}
+p#aboutHead {
+color:#000000;
+}
+p#aboutNames{
+color:#000000;
+}
+@media screen and (max-device-width: 1380px) and (min-device-width: 1300px){
+	body {
+		height:900px;
+	}
+	.line-2 {
+		line-height:200%;
+	}
+	#logo {
+		position:absolute;
+		left:40px;
+		top:8px;
+		width:90px;
+		height=90px;
+	}
+	#calcButton {
+		position:absolute;
+		left:985px;
+		top:520px;
+		height:65px;
+		width:200px;
+		font-size:200%;
+	}
+	#showCalc{
+		position:absolute;
+		left:75%;
+	}
+	#aboutButton{
+		position:fixed;
+		left: 90%;
+		top: 6%;
+	}
+	div.diet{
+		position:absolute;
+		left:415px;
+		top:530px;
+		-moz-transform:rotate(-90deg);
+		transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		font-size:200%;
+	}
+	div.travel{
+		position:absolute;
+		left:402px;
+		top:375px;
+		transform:rotate(-90deg);
+		-moz-transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		font-size:200%;
+	}
+	div.waste{
+		position:absolute;
+		left:402px;
+		top:200px;
+		transform:rotate(-90deg);
+		-moz-transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		font-size:200%;
+	}
+	div.utilities{
+		position:absolute;
+		left:-5px;
+		top:480px;
+		transform:rotate(-90deg);
+		-moz-transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		font-size:200%;
+	}
+	div.home{
+		position:absolute;
+		left:5px;
+		top:225px;
+		transform:rotate(-90deg);
+		-moz-transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		font-size:200%;
+	}
+	#wrapper {
+		position:fixed;
+		margin-top:-16px;
+		vertical-align:center;
+		width:100%;
+		height:95px;
+		font-size: 2em;
+	}
+	#home {
+		position:absolute;
+		left: 50px;
+		top: 120px;
+		width:25%;
+		line-height:220%;
+	}
+	#utilities{
+	  position: absolute;
+	  left: 50px;
+	  top: 360px;
+	  width:25%;
+	  line-height:219%;
+	}
+	#travel{
+		position: absolute;
+		left: 452px;
+		top: 310px;
+		width:25%;
+	}
+	#consumption{
+	  position: absolute;
+	  left: 451px;
+	  top: 464px;
+	  width:33%;
+	}
+	#waste{
+		position: absolute;
+		left: 452px;
+		top: 120px;
+		width:25%;
+	}
+	div#ecological_footprint {
+		position:absolute;
+		left: 830px;
+		top: 135px;
+		height:328px;
+		width:450px;
+		font-size: 18px;
+	}
+	div#about {
+		position:absolute;
+		left: 830px;
+		top: 135px;
+		height:328px;
+		width:450px;
+	}
+	span#gh {
+		font-size: 36px;
+	}
+	span#planets {
+		font-size: 36px;
+	}
+	p#aboutHead {
+		font-size: 24px;
+	}
+	p#aboutNames{
+		font-size: 15px;
+	}
+}
+@media screen and (max-device-width: 2000px) and (min-device-width: 1900px){
+	body {
+		height:1200px;
+	}
+	.line-2 {
+		line-height:200%;
+	}
+	#logo {
+		position:absolute;
+		left:40px;
+		top:8px;
+		width:90px;
+		height=90px;
+	}
+	#calcButton {
+		position:absolute;
+		left:1335px;
+		top:520px;
+		height:65px;
+		width:200px;
+		font-size:200%;
+	}
+	#showCalc{
+		position:absolute;
+		left:75%;
+	}
+	#aboutButton{
+		position:fixed;
+		left: 90%;
+		top: 47px;
+	}
+	div.diet{
+		position:absolute;
+		left:565px;
+		top:530px;
+		-moz-transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		font-size:200%;
+	}
+	div.travel{
+		position:absolute;
+		left:552px;
+		top:375px;
+		-moz-transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		font-size:200%;
+	}
+	div.waste{
+		position:absolute;
+		left:552px;
+		top:200px;
+		-moz-transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		font-size:200%;
+	}
+	div.utilities{
+		position:absolute;
+		left:-5px;
+		top:480px;
+		-moz-transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		font-size:200%;
+	}
+	div.home{
+		position:absolute;
+		left:5px;
+		top:225px;
+		-moz-transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		font-size:200%;
+	}
+	#wrapper {
+		position:fixed;
+		margin-top:-16px;
+		vertical-align:center;
+		width:100%;
+		height:95px;
+		font-size: 2em;
+	}
+	#home {
+		position:absolute;
+		left: 50px;
+		top: 120px;
+		width:25%;
+		line-height:220%;
+	}
+	#utilities{
+	  position: absolute;
+	  left: 50px;
+	  top: 360px;
+	  width:25%;
+	  line-height:219%;
+	}
+	#travel{
+		position: absolute;
+		left: 602px;
+		top: 310px;
+		width:25%;
+	}
+	#consumption{
+	  position: absolute;
+	  left: 601px;
+	  top: 464px;
+	  width:33%;
+	}
+	#waste{
+		position: absolute;
+		left: 602px;
+		top: 120px;
+		width:25%;
+	}
+	div#ecological_footprint {
+		position:absolute;
+		left: 1180px;
+		top: 135px;
+		height:328px;
+		width:450px;
+		font-size: 18px;
+	}
+	div#about {
+		position:absolute;
+		left: 1180px;
+		top: 135px;
+		height:328px;
+		width:450px;
+	}
+	span#gh {
+		font-size: 36px;
+	}
+	span#planets {
+		font-size: 36px;
+	}
+	p#aboutHead {
+		font-size: 24px;
+	}
+	p#aboutNames{
+		font-size: 15px;
+	}
+}
+@media screen and (max-device-width: 450px) and (min-device-width: 300px){
+	#logo {
+		position:absolute;
+		left:40px;
+		top:8px;
+		width:90px;
+		height=90px;
+	}
+	#aboutButton{
+		position:fixed;
+		left: 80%;
+		top: 80%;
+		box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+	div.main {
+		
+	}
+	div.diet {
+		padding-left:5px;
+	}
+	div.travel {
+		padding-left:5px;
+	}
+	div.waste {
+		padding-left:5px;
+	}
+	div.utilities {
+		padding-left:5px;
+	}
+	div.home {
+		padding-left:5px;
+	}
+	#home {
+		
+	}
+	#utilities {
+		
+	}
+	#travel {
+		
+	}
+	#diet {
+		
+	}
+	#waste {
+		
+	}
+	#wrapper {
+		
+	}	
+	p#aboutHead {
+		
+	}
+	p#aboutNames{
+		
+	}
+	div#ecological_footprint {
+		padding-left:5px;
+	}
+	div#about {
+		padding-left:5px;
+	}
+}
+

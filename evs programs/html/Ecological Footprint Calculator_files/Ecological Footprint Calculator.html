@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ecological Footprint Calculator</title>
+
+	<link rel="stylesheet"  href="./w3.css">
+	<link rel="stylesheet"  href="./evs.css">
+	<script src="./js.js" type="text/javascript"></script>
+
+</head>
+<body onload="pageload()">
+	<div class="main">
+		<header id="wrapper" class="w3-topnav w3-center w3-card-8">
+			<img id="logo" src="logo4.png"/>
+			<h1>Ecological Footprint</h1>
+		</header>
+		<section id="calculator">
+			<form>
+				<div class="home"><h3 style={font-family:roboto-condensed}>Home</h3></div>
+				<p class=" line-2 w3-padding-8 w3-white hoverable" style="text-align:left;" id="home">
+					I live in 
+					<br>
+					<select id="country" name="country" class="w3-select">
+						<option value="0" >United States of America</option>
+						<option value="1" selected="selected">India</option>
+						<option value="2" >United Kingdom</option>
+						<option value="3" >Russia</option>
+						<option value="4" >China</option>
+						<option value="5" >Japan</option>
+						<option value="6" >Germany</option>
+						<option value="7" >Australia</option>
+						<option value="8" >Canada</option>
+						<option value="9" >Brazil</option>
+						<option value="10" >Bangladesh</option>
+					</select>
+					<br>
+					in a
+					<br>
+					<select id="house_type" class="w3-select">
+						<option value="0">large house</option>
+						<option value="1"  selected="selected">medium-sized house</option>
+						<option value="2">small house</option>
+						<option value="3">flat/apartment</option>
+						<option value="4">zero-emission development</option>
+					</select>
+					<br>
+					which I share with
+					<br>
+					<select id="house_share" class="w3-select">
+						<option value="0">no other people</option>
+						<option value="1" selected="selected">one other person</option>
+						<option value="2">two other people</option>
+						<option value="3">three other people</option>
+						<option value="4">four other people</option>
+						<option value="5">five other people</option>
+						<option value="6">six other people</option>
+						<option value="7">more than six others</option>
+					</select>
+					<br>
+				</p>
+				<div class="utilities"><h3 style={font-family:roboto-condensed}>Utilities</h3></div>
+				<p class=" line-2 w3-padding-8 w3-white hoverable" style="text-align:left;" id="utilities">
+					For the size of my home, <br>my heating/cooling bills are
+					<br>
+					<select id="house_utilities" class="w3-select">
+						<option value="0" selected="selected">normal</option>
+						<option value="1">higher than average</option>
+						<option value="2">lower than average</option>
+					</select>
+					<br>
+					I buy my electrcity from
+					<br>
+					<select id="house_renewables" class="w3-select">
+						<option value="0" selected="selected">non-renewable sources</option>
+						<option value="1">renewable sources</option>
+					</select>
+					<br>
+					and I tend
+					<br>
+					<select id="house_conservation" class="w3-select">
+						<option value="0" selected="selected">not to conserve energy</option>
+						<option value="1">to conserve energy</option>
+					</select>
+				</p>
+				<div class="travel"><h3 style={font-family:roboto-condensed}>Travel</h3></div>
+				<p class=" line-2 w3-padding-8 w3-white hoverable" style="text-align:left;" id="travel">
+					I travel mostly by 
+					<br>
+					<select id="loco" class="w3-select">
+						<option value="0" selected="selected">car (average user)</option>
+						<option value="1">car (heavy user)</option>
+						<option value="2">car (light user)</option>
+						<option value="3">bus/train</option>
+						<option value="4">walking/cycling</option>
+						<option value="5">motorbike</option>
+					</select>
+					<br>
+					and usually go on holiday
+					<br>
+					<select id="holidays" class="w3-select">
+						<option value="0" selected="selected">close to home</option>
+						<option value="1">a short flight away</option>
+						<option value="2">a long flight away</option>
+					</select>
+				</p>
+				<div class="diet"><h3 style={font-family:roboto-condensed}>Diet</h3></div>
+				<p class=" line-2 w3-padding-8 w3-white hoverable" style="text-align:left;" id="consumption">
+					I am
+					<br>
+					<select id="diet_animals" class="w3-select">
+						<option value="0" selected="selected">I am a regular meat-eater</option>
+						<option value="1">I am an occasional meat-eater</option>
+						<option value="2">I am a heavy meat-eater</option>
+						<option value="3">I am a vegetarian</option>
+						<option value="4">I am a vegan</option>
+					</select>
+					<br>
+					and usually eat
+					<br>
+					<select id="diet_cooking" class="w3-select">
+						<option value="0" selected="selected">a mixture of fresh and convenience foods</option>
+						<option value="1">mostly fresh, locally-grown produce</option>
+						<option value="2">mostly convenience foods</option>
+					</select>
+					<br>
+				</p>
+				<div class="waste"><h3 style={font-family:roboto-condensed}>Waste</h3></div>
+				<p class=" line-2 w3-padding-8 w3-white hoverable" style="text-align:left;" id="waste">
+					I produce
+					<br>
+					<select id="trash" class="w3-select">
+						<option value="0" selected="selected">an average</option>
+						<option value="1">a below-average</option>
+						<option value="2">an above-average</option>
+						<option value="3">half the average</option>
+					</select>
+					<br>
+					amount of waste,<br> most of which is<br>
+					<select id="recycling" class="w3-select">
+						<option value="0" selected="selected">not recycled</option>
+						<option value="1">recycled</option>
+					</select>
+				</p>
+				<p><button class="w3-btn" id="calcButton" onclick="myFunction();return false">Calculate</button></p>
+				<p title="About" class="w3-btn-floating-large" id="aboutButton" onclick="showAbout();return false">A</p>
+			</form>
+			
+			<div class=" w3-padding-16 w3-white w3-card-8 ecological_footprint" id="about" >
+				<p class="w3-center" id="aboutHead">
+					About:<br>
+					Team11-Software Development
+				</p>
+				<p id="aboutNames">
+					Amarnath M<span style="float:right;">CSE14005</span><br>
+					Aravind AV<span style="float:right;">CSE14006</span><br>
+					Athithya J<span style="float:right;">CSE14007</span><br>
+					Darshaun KG<span style="float:right;">CSE14013</span><br>
+					Sankkara Narayanan R<span style="float:right;">CSE14044</span>
+				</p>
+				<p><button class="w3-btn" id="showCalc" onclick="hideAbout()" >Close</button></p>
+			</div>
+			
+			<div class=" w3-padding-16 w3-white w3-card-8 ecological_footprint" id="ecological_footprint">
+				<p class="w3-center" >
+					Your Ecological Footprint is
+					<br>
+					<span id="gh">
+						xx global hectares
+					</span><br>
+					<span class="note">(estimated)</span>
+					<br>
+					<br>
+					if everyone lived like you, we'd need
+					<br>
+					<span id="planets">
+						xx planets
+					</span>
+					<br>
+					to support global consumption
+				</p>
+			</div>
+			
+		</section>
+	</div>
+</body>
+</html>
